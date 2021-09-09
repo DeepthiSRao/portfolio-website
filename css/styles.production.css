@@ -92,15 +92,25 @@ p {
 }
 
 /* Form CSS */
+#contact{
+    min-width: 480px;
+}
+
 .contact-btn {
     font-weight: bold;
     padding: 5px 20px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .contact-btn:hover {
     opacity: .7;
     cursor: pointer;
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    display: inline-block;
 }
 
 /* Profile CSS */
