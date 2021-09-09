@@ -11,7 +11,6 @@
     --secondary-text-color: #fff;
     --font-weight: bold;
     --secondary-font-size: .8rem;
-    --anchor-active: red;
 }
 
 .btn-primary {
@@ -39,11 +38,6 @@ a:hover {
     border-bottom: 2px solid var(--primary-color);
 }
 
-a:active {
-    color: var(--anchor-active);
-    border-bottom: 2px solid var(--anchor-active);
-}
-
 h1, h2 {
     font-weight: 300;
     line-height: 1.2;
@@ -57,37 +51,28 @@ p {
 #page-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
-    padding: 10px 30px;
+    padding: 5px 20px;
     background-color: rgb(230, 223, 223);
-}
-
-.page-header_item {
-    flex: 0 1 200px;
-}
-
-.page-header_item:last-child {
-    flex-grow: 1;
-    text-align: right;
 }
 
 .navigation-list {
     list-style-type: none;
+    display: flex;
 }
 
-.navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+.navigation-list_item {
+    margin: 0 10px;
 }
 
 .profile-photo {
-    width: 100px;
-    height: 60px;
+    width: 80px;
 }
 
 /* Form CSS */
 #contact{
-    min-width: 480px;
+    min-width: 240px;
 }
 
 .contact-btn {
@@ -116,7 +101,7 @@ p {
 }
 
 .profile_portrait {
-    width: 300px;
+    width: 200px;
     height: 250px;
     border-radius: 50%;
     margin-right: 40px;
@@ -197,9 +182,12 @@ p {
         overflow: hidden;
         text-overflow: clip;
     }
+    .navigation-list_item{
+        margin: 0 3px;
+    }
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 768px){
     .project-list {
         grid-gap: 10px;
         padding: 0 10px;
@@ -210,6 +198,12 @@ p {
     .project-image {
         height: 120px;
         width: 90%;
+    }
+    #page-header{
+        flex-direction: column;
+    }
+    .navigation-list_item{
+        font-size: .8rem;
     }
 }
 
