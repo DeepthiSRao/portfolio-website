@@ -6,8 +6,9 @@
 }
 
 :root {
-    --primary-color: #006400; 
-    --secondary-color: #4C4FCE;
+    --primary-color: #144552; 
+    --secondary-color: #006400;
+    --background-color: #b7e4c7;
     --primary-text-color: #333;
     --secondary-text-color: #fff;
     --font-weight: bold;
@@ -16,7 +17,7 @@
 
 .btn-primary {
     border: 1px solid var(--primary-text-color);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--secondary-text-color);
     border-radius: 5px; 
 }
@@ -24,12 +25,12 @@
 body {
     font: normal 1rem/1.6 'Nunito', sans-serif;
     color: var(--primary-text-color);
-    background-color: #b7e4c7;
+    background-color: var(--background-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h1, h2 {
@@ -48,7 +49,7 @@ p {
     justify-content: space-between;
     width: 100%;
     padding: 5px 20px;
-    background-color: #144552;
+    background-color: var(--primary-color);
 }
 
 .navigation-list {
@@ -59,7 +60,7 @@ p {
 .navigation-list_item {
     text-decoration: none;
     margin: 0 10px;
-    color: #fff;
+    color: var(--secondary-text-color);
     position: relative;
 }
 
@@ -77,7 +78,7 @@ p {
     width: 0%;
     content: '.';
     color: transparent;
-    background: #aaa;
+    background: var(--secondary-text-color);
     height: 1px;
 }
 
@@ -124,17 +125,17 @@ p {
 }
 
 .page-footer a {
-    color: #144552;
+    color: var(--primary-color);
 }
 
 .page-footer a:hover {
-    color: #fff;
+    color: var(--secondary-text-color);
 }
 
 /* Work Page */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
     padding: 0 20px;
 }
@@ -165,8 +166,8 @@ p {
 .grid-item-title {
     padding: 5px;
     border-radius: 5px 5px 0 0;
-    background: #144552;
-    color: #fff;
+    background: var(--primary-color);
+    color: var(--secondary-text-color);
 }
 
 .project_container {
@@ -183,13 +184,12 @@ p {
 .project-list_item--desc span {
     font-size: .8em;
     font-weight: bold;
-    color: #144552;
-    padding-top: 5px;
+    color: var(--primary-color);
 }
 
 /* Contact Page*/
-.contact-border {
-    border: 1px dotted var(--primary-color);
+.contact-container {
+    border: 1px dotted var(--secondary-color);
     border-radius: 5px;
 }
 
@@ -197,7 +197,6 @@ p {
     display: flex;
     flex-direction: column;
     padding: 20px 10px;
-    flex-basis: 100%;
     flex:1;
     align-items: center;
     justify-content: center;
@@ -214,7 +213,7 @@ p {
 }
 
 .contact-form {
-    border-right: 1px dotted var(--primary-color);
+    border-right: 1px dotted var(--secondary-color);
 }
 
 .contact-btn {
@@ -236,12 +235,16 @@ p {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    outline: var(--primary-color);
+    outline: var(--secondary-color);
 }
 
 .contact-title {
     margin: 20px;
     text-decoration: underline;
+}
+
+.column .rows {
+    width: 100%;
 }
 
 /* About Page*/
@@ -306,6 +309,9 @@ table,th, td {
         border-right: none;
         border-bottom: 1px dotted var(--primary-text-color);
     }
+    .column .rows {
+        align-self: flex-start;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -318,5 +324,11 @@ table,th, td {
     }
     body {
         font-size: var(--secondary-font-size);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-container{
+        width: 70% !important;
     }
 }
