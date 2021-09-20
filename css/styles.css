@@ -86,6 +86,10 @@ p {
     width: 100%;
 }
 
+.navigation-list .active {
+    font-weight: bolder;
+}
+
 .profile-photo {
     width: 80px;
 }
@@ -330,5 +334,6 @@ table,th, td {
 @media screen and (min-width: 768px) {
     .contact-container{
         width: 70% !important;
+        text-align: center;
     }
 }
