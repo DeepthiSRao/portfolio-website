@@ -13,7 +13,8 @@
 }
 
 body {
-    font: normal 1rem/1.6 'Nunito', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
     color: #333;
     background-color: #b7e4c7;
 }
