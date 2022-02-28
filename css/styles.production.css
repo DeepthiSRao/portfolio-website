@@ -21,9 +21,9 @@
 }
 
 body {
-    font: normal 1rem/1.6 'Nunito', sans-serif;
+    font: normal 1.5rem/1.6 'Nunito', sans-serif;
     color: #333;
-    background-color: #b7e4c7;
+    background-color: #d8f3dc;
 }
 
 a {
@@ -52,9 +52,9 @@ p {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: #144552;
-    height: 70px;
+    height: 80px;
 }
 
 .navigation-list {
@@ -66,7 +66,7 @@ p {
 
 .navigation-list_item {
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px;
     color: #fff;
     position: relative;
 }
@@ -100,7 +100,7 @@ p {
 }
 
 .profile-photo {
-    width: 80px;
+    width: 120px;
 }
 
 /* Profile CSS */
@@ -164,9 +164,9 @@ p {
 .project-list {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 25px 1fr 25px 1fr;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 25px;
     padding: 0 20px;
 }
 
@@ -180,7 +180,6 @@ p {
 
 .project-image {
     height: 200px;
-    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 50% 50%;
@@ -193,22 +192,25 @@ p {
 }
 
 .section-header h1 {
-    margin: 10px auto;
+    color: #144552;
+    font-weight: 800;
+    margin: 1rem auto;
 }
 
 .grid-item-title {
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 5px 5px 0 0;
     background: #144552;
     color: #fff;
 }
 
 .project_container {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .project-list_item--desc {
-    font: .8rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
     margin: 0;
     text-align: justify;
     -webkit-box-pack: end;
@@ -217,7 +219,6 @@ p {
 }
 
 .project-list_item--desc span {
-    font-size: .8em;
     font-weight: bold;
     color: #144552;
 }
@@ -344,7 +345,7 @@ td {
 
 @media screen and (min-width: 480px) and (max-width: 720px) {
     .project-list {
-        -ms-grid-columns: 1fr 20px 1fr;
+        -ms-grid-columns: 1fr 25px 1fr;
         grid-template-columns: 1fr 1fr;
     }
 }

@@ -8,7 +8,7 @@
 :root {
     --primary-color: #144552; 
     --secondary-color: #006400;
-    --background-color: #b7e4c7;
+    --background-color: #d8f3dc;
     --primary-text-color: #333;
     --secondary-text-color: #fff;
     --font-weight: bold;
@@ -23,7 +23,7 @@
 }
 
 body {
-    font: normal 1rem/1.6 'Nunito', sans-serif;
+    font: normal 1.5rem/1.6 'Nunito', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--background-color);
 }
@@ -48,9 +48,9 @@ p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 5px 20px;
+    padding: 10px 20px;
     background-color: var(--primary-color);
-    height: 70px;
+    height: 80px;
 }
 
 .navigation-list {
@@ -60,7 +60,7 @@ p {
 
 .navigation-list_item {
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px;
     color: var(--secondary-text-color);
     position: relative;
 }
@@ -92,7 +92,7 @@ p {
 }
 
 .profile-photo {
-    width: 80px;
+    width: 120px;
 }
 
 /* Profile CSS */
@@ -141,7 +141,7 @@ p {
 .project-list {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 20px;
+    grid-gap: 25px;
     padding: 0 20px;
 }
 
@@ -154,7 +154,6 @@ p {
 
 .project-image {
     height: 200px;
-    width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
     image-resolution: 400dpi;
@@ -165,29 +164,31 @@ p {
 }
 
 .section-header h1 {
-    margin: 10px auto;
+    color: var(--primary-color);
+    font-weight: 800;
+    margin: 1rem auto;
 }
 
 .grid-item-title {
-    padding: 5px;
+    padding: 5px 20px;
     border-radius: 5px 5px 0 0;
     background: var(--primary-color);
     color: var(--secondary-text-color);
 }
 
 .project_container {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .project-list_item--desc {
-    font: .8rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
     margin: 0;
     text-align: justify;
     justify-content: end;
 }
 
 .project-list_item--desc span {
-    font-size: .8em;
     font-weight: bold;
     color: var(--primary-color);
 }
